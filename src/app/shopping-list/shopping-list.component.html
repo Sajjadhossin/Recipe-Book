@@ -1,2 +1,8 @@
-<p>shopping-list works!</p>
-<app-shopping-edit></app-shopping-edit>
+<section class="container">
+    <app-shopping-edit></app-shopping-edit>
+    <ul class="mt-4">
+      <a *ngFor="let item of ingredients" href="" class="border p-2 block">
+      {{ item.name }} {{ (item.amount) }}
+      </a>
+    </ul>
+</section>
